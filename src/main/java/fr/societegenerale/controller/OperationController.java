@@ -32,4 +32,12 @@ public class OperationController {
 
     }
 
+    @PostMapping(
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public OperationDto saveOperation(@RequestBody OperationDto operation) throws Exception {
+        return this.operationService.saveOperation(operation);
+
+
+    }
 }
