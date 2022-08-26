@@ -3,7 +3,6 @@ package fr.societegenerale.operation_api.service;
 import fr.societegenerale.model.OperationEntity;
 import fr.societegenerale.model.OperationTypeEnum;
 import fr.societegenerale.repository.OperationRepository;
-import fr.societegenerale.service.ClientAccountService;
 import fr.societegenerale.service.OperationService;
 import fr.societegenerale.service.impl.OperationServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +17,7 @@ import org.springframework.test.context.TestContextManager;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.springframework.test.util.AssertionErrors.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 
 public class OperationServiceTest {
